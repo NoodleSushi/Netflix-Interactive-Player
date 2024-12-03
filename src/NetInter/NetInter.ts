@@ -31,7 +31,7 @@ const useNetInter = create<NetInter>((set, get) => ({
       case "not":
         return !evalPCondMap(exp[1])
       case "eql":
-        return evalPCondMap(exp[1]) === evalPCondMap(exp[2])
+        return evalPCondMap(exp[1]) == evalPCondMap(exp[2])
       case "gt":
         return evalPCondMap(exp[1]) > evalPCondMap(exp[2])
       case "gte":
